@@ -18,7 +18,7 @@
     <article>
 
 	<div class="H2"></div>
-	<p class="T2">alfa 0.1</p>
+	<p class="T2">alfa 0.2</p>
 	<p class="T3">Learn big here!</p>
 
 
@@ -104,21 +104,16 @@
     
     function M1(){
     	if (l1==0){
-        
             $("#M2").css({"color": "#FFFFFF", "top": "230px", "left": "35%"});
-
             $("#M3").css({"color": "#FFFFFF", "top": "230px", "left": "65%"});
-         
          l1 = 1;
         }
         else if (l1==1){
-
             $("#M2").css({"color": "transparent", "top": "160px", "left": "50%"});
-
             $("#M3").css({"color": "transparent", "top": "160px", "left": "50%"});
-
          l1 = 0;
-     }}
+     }
+ }
      function M2(){
         if (l2==0){
 
@@ -131,9 +126,25 @@
      function M3(){
         if (l3==0){
 
+            $("body").css({"background": "#FFFFFF"});
+            $("#M1").css({"color": "#000000"});
+            $("#M2").css({"color": "#000000"});
+            $("#M3").css({"color": "#000000"});
+            $("#H3").css({"background": "#444444"});
+            $("#H4").css({"background": "#444444"});
+            $("#H5").css({"background": "#444444"});
+
          l3 = 1;
         }
         else if (l3==1){
+
+            $("body").css({"background": "#000000"});
+            $("#M1").css({"color": "#FFFFFF"});
+            $("#M2").css({"color": "#FFFFFF"});
+            $("#M3").css({"color": "#FFFFFF"});
+            $("#H3").css({"background": "#999999"});
+            $("#H4").css({"background": "#999999"});
+            $("#H5").css({"background": "#999999"});
 
          l3 = 0;
      }}
