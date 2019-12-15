@@ -65,7 +65,7 @@ body{
 	left: 0px;
 }
 .T2{
-	color: #FFFFFF;
+	color: #333333;
 	position: absolute;
 	top: 105px;
 	right: 10px;
@@ -74,7 +74,7 @@ body{
 	user-select: none;
 }
 .T3{
-	color: #EEEEEE;
+	color: #333333;
 	position: absolute;
 	top: 90px;
 	left: 45%;
