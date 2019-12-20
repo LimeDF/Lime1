@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head
+<head>
 	<script src=https://code.jquery.com/jquery-3.4.1.js></script>
 	<meta charset="UTF-8">
 	<title>Lime</title>
@@ -12,40 +12,31 @@
 	<header>
 		<div class="H1"></div>
 		<img src="Foto/Logo.jpg" id="Logo" />
-		<p class="T1">Make the world</br>better together</p>
-      
+		<p class="T1">Make the world</br>better together</p> 
 	</header>
     <article>
-
 	<div class="H2"></div>
-	<p class="T2">alfa 0.2</p>
+	<p class="T2">alfa 0.3</p>
 	<p class="T3">Learn big here!</p>
-
-
-
+    <div class="Lan1" onclick="L1()">English</div>
+    <div class="Lan2" onclick="L2()">Russian</div>
 	<div class="H3">
-     <p id="P1">Plants</p>   
+     <p id="P1">Plants</p> 
     </div>
     <a href="Pages/P1.html" id="li1" onmouseover="F1()" onmouseout="FF1()"></a>
 	<div class="H4">
-     <p id="P2">Animals</p>      
+     <p id="P2">Animals</p>
     </div>
     <a href="Pages/P2.html" id="li2" onmouseover="F2()" onmouseout="FF2()"></a>
 	<div class="H5">
      <p id="P3">Astronomy</p>   
     </div>
     <a href="Pages/P3.html" id="li3" onmouseover="F3()" onmouseout="FF3()"></a>
-
-
     <i class="material-icons" id="M2" onclick="M2()">language</i>
     <i class="material-icons" id="M3" onclick="M3()">invert_colors</i>
     <i class="material-icons" id="M1" onclick="M1()">menu</i>
-
     </article>
-
 	 <script type="text/javascript">
-		
-
 		function F1(){
     if (true){
         {$(".H3").css({"height": "200px", "top": "315px"}); 
@@ -62,7 +53,6 @@
         }
        }
       }
-
     function F2(){
     if (true){
         {$(".H4").css({"height": "200px", "top": "615px"});
@@ -79,7 +69,6 @@
         }
        }
       }
-
     function F3(){
     if (true){
         {$(".H5").css({"height": "200px", "top": "915px"});
@@ -96,12 +85,11 @@
         }
        }
       }
-
-
      let l1 = 0;
      let l2 = 0;
      let l3 = 0;
-    
+     let l4 = 0;
+     let l5 = 0;
     function M1(){
     	if (l1==0){
             $("#M2").css({"color": "#FFFFFF", "top": "230px", "left": "35%"});
@@ -112,20 +100,10 @@
             $("#M2").css({"color": "transparent", "top": "160px", "left": "50%"});
             $("#M3").css({"color": "transparent", "top": "160px", "left": "50%"});
          l1 = 0;
-     }
- }
-     function M2(){
-        if (l2==0){
-
-         l2 = 1;
-        }
-        else if (l2==1){
-
-         l2 = 0;
-     }}
+         }
+        }  
      function M3(){
         if (l3==0){
-
             $("body").css({"background": "#FFFFFF"});
             $("#M1").css({"color": "#000000"});
             $("#M2").css({"color": "#000000"});
@@ -133,11 +111,12 @@
             $("#H3").css({"background": "#444444"});
             $("#H4").css({"background": "#444444"});
             $("#H5").css({"background": "#444444"});
+            $(".Lan1").css({"background": "#CCCCCC", "color": "#000000"});
+            $(".Lan2").css({"background": "#CCCCCC", "color": "#000000"});
 
          l3 = 1;
         }
         else if (l3==1){
-
             $("body").css({"background": "#000000"});
             $("#M1").css({"color": "#FFFFFF"});
             $("#M2").css({"color": "#FFFFFF"});
@@ -145,10 +124,44 @@
             $("#H3").css({"background": "#999999"});
             $("#H4").css({"background": "#999999"});
             $("#H5").css({"background": "#999999"});
-
+            $(".Lan1").css({"background": "#333333", "color": "#FFFFFF"});
+            $(".Lan2").css({"background": "#333333", "color": "#FFFFFF"});
          l3 = 0;
      }}
-
+      function M2(){
+        if (l2==0){
+           $(".Lan1").css({"left": "5px"});
+           $(".Lan2").css({"left": "5px"});
+         l2 = 1;
+        }
+        else if (l2==1){
+           $(".Lan1").css({"left": "-210px"});
+           $(".Lan2").css({"left": "-210px"});
+         l2 = 0;
+     }}
+      function L1(){
+        if (true){
+          $(".Lan1").html("<div>English</div>");
+          $(".Lan2").html("<div>Russian</div>");
+          $(".T1").html("<div>Make the world</br>better together</div>");
+          $(".T3").html("<div>Learn big here!</div>");
+          $(".T3").html("<div>Learn big here!</div>");
+          $(".T3").html("<div>Learn big here!</div>");
+          $("#P1").text("Plants");
+          $("#P2").text("Animals");
+          $("#P3").text("Astronomy");
+        }}
+var tr = 1;
+      function L2(){
+        if (true){
+          $(".Lan1").html("<div>Английский</div>");
+          $(".Lan2").html("<div>Русский</div>");
+          $(".T1").html("<div>Сделаем мир</br>лучше вместе</div>");
+          $(".T3").html("<div>Узнайте больше здесь!</div>");
+          $("#P1").text("Растение");
+          $("#P2").text("Животные");
+          $("#P3").text("Астрономия");
+        } }
     </script>
 </body>
 </html>
