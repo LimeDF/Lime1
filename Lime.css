@@ -17,6 +17,25 @@ body{
 	top: 5px;
 	left: 5px;
 }
+.Lan1,.Lan2{
+  background-color: #333333;
+  color: #FFFFFF;
+  position: absolute;
+  left: -210px;
+  height: 50px;
+  width: 200px;
+  transition: 1s;
+  font-size: 25px;
+	font-family: 'Aldrich', sans-serif;
+	text-align: center;
+	user-select: none;
+}
+.Lan1{ top: 150px; }
+.Lan2{
+  top: 205px; 
+  transition-delay: 0.2s;
+ }
+
 #M1{
 	color: #FFFFFF;
 	background-color: transparent;
