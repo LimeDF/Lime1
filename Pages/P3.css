@@ -9,8 +9,18 @@ body{
 	width: 100%;
 	background: #000000;
 }
-h1{
+h3{
 	color: #FFFFFF;
 	font-family: 'Aldrich', sans-serif;
 	font-size: 100px;
+	position: absolute;
+	top: 30px;
+}
+#text{
+	color: #EEEEEE;
+	background-color: transparent;
+	position: absolute;
+	top: 250px;
+	left: 15px;
+	font-size: 27px;
 }
