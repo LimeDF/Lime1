@@ -16,7 +16,7 @@
 	</header>
     <article>
 	<div class="H2"></div>
-	<p class="T2">alfa 0.3</p>
+	<p class="T2">alfa 0.4</p>
 	<p class="T3">Learn big here!</p>
     <div class="Lan1" onclick="L1()">English</div>
     <div class="Lan2" onclick="L2()">Russian</div>
@@ -35,8 +35,18 @@
     <i class="material-icons" id="M2" onclick="M2()">language</i>
     <i class="material-icons" id="M3" onclick="M3()">invert_colors</i>
     <i class="material-icons" id="M1" onclick="M1()">menu</i>
+<!-- Snow code -->
+    <div class="wall">
+     <div class="snow layer1 a"></div>
+     <div class="snow layer1"></div> 
+     <div class="snow layer2 a"></div>
+     <div class="snow layer2"></div>
+    </div>
+    
     </article>
+
 	 <script type="text/javascript">
+
 		function F1(){
     if (true){
         {$(".H3").css({"height": "200px", "top": "315px"}); 
@@ -94,11 +104,15 @@
     	if (l1==0){
             $("#M2").css({"color": "#FFFFFF", "top": "230px", "left": "35%"});
             $("#M3").css({"color": "#FFFFFF", "top": "230px", "left": "65%"});
+            $(".Lan1").css({"left": "-210px"});
+            $(".Lan2").css({"left": "-210px"});
          l1 = 1;
         }
         else if (l1==1){
             $("#M2").css({"color": "transparent", "top": "160px", "left": "50%"});
             $("#M3").css({"color": "transparent", "top": "160px", "left": "50%"});
+            $(".Lan1").css({"left": "-210px"});
+            $(".Lan2").css({"left": "-210px"});
          l1 = 0;
          }
         }  
@@ -113,7 +127,6 @@
             $("#H5").css({"background": "#444444"});
             $(".Lan1").css({"background": "#CCCCCC", "color": "#000000"});
             $(".Lan2").css({"background": "#CCCCCC", "color": "#000000"});
-
          l3 = 1;
         }
         else if (l3==1){
