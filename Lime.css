@@ -133,3 +133,72 @@ body{
 #li1{ top: 350px; }
 #li2{ top: 650px; }
 #li3{ top: 950px; }
+
+#M31{
+	color: #FF0000;
+	background-color: transparent;
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	font-size: 40px;
+	transition: 1s;
+	user-select: none;
+}
+
+/* Snow code */
+
+.wall {
+  height: 100%;
+  width: 100%;
+  background-color: #000000; }
+
+.snow {
+  border-radius: 50%;
+  opacity: 0.8;
+  position: absolute;
+  top: -100vh;
+  -webkit-animation-name: fall;
+  animation-name: fall;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+.layer1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-filter: blur(1.5px);
+  filter: blur(1.5px);
+  -webkit-box-shadow: 45.7vw 88.8vh 0 -0.23rem#fff,49.9vw 36vh 0 -0.16rem#fff,5.7vw 58.1vh 0 -0.32rem#fff,71.3vw 55.2vh 0 -0.32rem#fff,30.1vw 16.1vh 0 -0.04rem#fff,33.6vw 31.1vh 0 -0.34rem#fff,7.2vw 84.2vh 0 -0.03rem#fff,5.1vw 77.6vh 0 -0.36rem#fff,40vw 25.9vh 0 -0.25rem#fff,2.8vw 90.5vh 0 -0.39rem#fff,7vw 26.6vh 0 -0.29rem#fff,30.8vw 87.8vh 0 -0.14rem#fff,12.5vw 87.5vh 0 -0.42rem#fff,41.2vw 23.9vh 0 -0.44rem#fff,30.4vw 76.6vh 0 -0.41rem#fff,97.4vw 12.1vh 0 -0.4rem#fff,9.2vw 20vh 0 -0.32rem#fff,48.2vw 26vh 0 -0.31rem#fff,3.5vw 51.9vh 0 -0.49rem#fff,47.3vw 27.9vh 0 -0.03rem#fff,41.1vw 4.8vh 0 -0.33rem#fff,62.7vw 13.5vh 0 -0.48rem#fff,48.2vw 45.1vh 0 -0.41rem#fff,41.1vw 59.6vh 0 -0.25rem#fff,98.2vw 58.7vh 0 -0.46rem#fff,13.6vw 74.5vh 0 -0.5rem#fff,98.7vw 67.3vh 0 -0.27rem#fff,34.8vw 21.8vh 0 -0.14rem#fff,17.5vw 0.7vh 0 -0.13rem#fff,95.7vw 52.3vh 0 -0.12rem#fff,70.9vw 9.2vh 0 -0.25rem#fff,74.8vw 4vh 0 -0.25rem#fff,71vw 18.6vh 0 -0.2rem#fff,71.3vw 48.9vh 0 -0.34rem#fff,16.5vw 55.1vh 0 -0.43rem#fff,4.2vw 13.6vh 0 -0.26rem#fff,92.1vw 33.2vh 0 -0.44rem#fff,80.2vw 36.4vh 0 -0.32rem#fff,76.5vw 11vh 0 -0.1rem#fff,26.4vw 96.1vh 0 -0.14rem#fff,45.7vw 38.2vh 0 -0.05rem#fff,3.3vw 9.9vh 0 -0.17rem#fff,80.6vw 76.8vh 0 -0.26rem#fff,9.6vw 44.8vh 0 -0.45rem#fff,41vw 28.8vh 0 -0.16rem#fff,37.1vw 10.3vh 0 -0.28rem#fff,4.9vw 90.4vh 0 -0.19rem#fff,78.6vw 21.5vh 0 -0.17rem#fff,54.9vw 14.1vh 0 -0.06rem#fff,54.6vw 99vh 0 -0.08rem#fff;
+  box-shadow: 45.7vw 88.8vh 0 -0.23rem#fff,49.9vw 36vh 0 -0.16rem#fff,5.7vw 58.1vh 0 -0.32rem#fff,71.3vw 55.2vh 0 -0.32rem#fff,30.1vw 16.1vh 0 -0.04rem#fff,33.6vw 31.1vh 0 -0.34rem#fff,7.2vw 84.2vh 0 -0.03rem#fff,5.1vw 77.6vh 0 -0.36rem#fff,40vw 25.9vh 0 -0.25rem#fff,2.8vw 90.5vh 0 -0.39rem#fff,7vw 26.6vh 0 -0.29rem#fff,30.8vw 87.8vh 0 -0.14rem#fff,12.5vw 87.5vh 0 -0.42rem#fff,41.2vw 23.9vh 0 -0.44rem#fff,30.4vw 76.6vh 0 -0.41rem#fff,97.4vw 12.1vh 0 -0.4rem#fff,9.2vw 20vh 0 -0.32rem#fff,48.2vw 26vh 0 -0.31rem#fff,3.5vw 51.9vh 0 -0.49rem#fff,47.3vw 27.9vh 0 -0.03rem#fff,41.1vw 4.8vh 0 -0.33rem#fff,62.7vw 13.5vh 0 -0.48rem#fff,48.2vw 45.1vh 0 -0.41rem#fff,41.1vw 59.6vh 0 -0.25rem#fff,98.2vw 58.7vh 0 -0.46rem#fff,13.6vw 74.5vh 0 -0.5rem#fff,98.7vw 67.3vh 0 -0.27rem#fff,34.8vw 21.8vh 0 -0.14rem#fff,17.5vw 0.7vh 0 -0.13rem#fff,95.7vw 52.3vh 0 -0.12rem#fff,70.9vw 9.2vh 0 -0.25rem#fff,74.8vw 4vh 0 -0.25rem#fff,71vw 18.6vh 0 -0.2rem#fff,71.3vw 48.9vh 0 -0.34rem#fff,16.5vw 55.1vh 0 -0.43rem#fff,4.2vw 13.6vh 0 -0.26rem#fff,92.1vw 33.2vh 0 -0.44rem#fff,80.2vw 36.4vh 0 -0.32rem#fff,76.5vw 11vh 0 -0.1rem#fff,26.4vw 96.1vh 0 -0.14rem#fff,45.7vw 38.2vh 0 -0.05rem#fff,3.3vw 9.9vh 0 -0.17rem#fff,80.6vw 76.8vh 0 -0.26rem#fff,9.6vw 44.8vh 0 -0.45rem#fff,41vw 28.8vh 0 -0.16rem#fff,37.1vw 10.3vh 0 -0.28rem#fff,4.9vw 90.4vh 0 -0.19rem#fff,78.6vw 21.5vh 0 -0.17rem#fff,54.9vw 14.1vh 0 -0.06rem#fff,54.6vw 99vh 0 -0.08rem#fff;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s; }
+
+.layer1.a {
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s; }
+
+.layer2 {
+  width: 1.2rem;
+  height: 1.2rem;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-box-shadow: 21.8vw 51.2vh 0 -0.33rem#fff,45.9vw 57vh 0 -0.05rem#fff,56.3vw 44.3vh 0 -0.09rem#fff,63.6vw 51.7vh 0 -0.07rem#fff,4.5vw 70.5vh 0 -0.14rem#fff,67.3vw 28.1vh 0 -0.11rem#fff,33.8vw 17.7vh 0 -0.4rem#fff,79.5vw 84.6vh 0 -0.06rem#fff,94.5vw 21.8vh 0 -0.23rem#fff,5.5vw 59.3vh 0 -0.26rem#fff,37.8vw 86vh 0 -0.28rem#fff,93.9vw 93.6vh 0 -0.36rem#fff,3.5vw 25.6vh 0 -0.31rem#fff,64.4vw 65.5vh 0 -0.07rem#fff,18.2vw 79.6vh 0 -0.05rem#fff,25.2vw 36.5vh 0 -0.3rem#fff,22.9vw 70.9vh 0 -0.3rem#fff,85vw 39.8vh 0 -0.12rem#fff,55.2vw 77.5vh 0 -0.29rem#fff,65vw 9.1vh 0 -0.49rem#fff,95.2vw 56.4vh 0 -0.07rem#fff,16.6vw 18.1vh 0 -0.18rem#fff,82.6vw 3.3vh 0 -0.22rem#fff,58.3vw 12.5vh 0 -0.01rem#fff,31.2vw 16.4vh 0 -0.05rem#fff,36.5vw 82.8vh 0 -0.19rem#fff,24vw 26.2vh 0 -0.1rem#fff,50vw 84.6vh 0 -0.21rem#fff,82.9vw 64.2vh 0 -0.42rem#fff,59.8vw 74.5vh 0 -0.24rem#fff,70.2vw 74.2vh 0 -0.02rem#fff,27.5vw 12.1vh 0 -0.43rem#fff,48.7vw 54.6vh 0 -0.01rem#fff,7vw 5.5vh 0 -0.1rem#fff,28.2vw 83.8vh 0 -0.23rem#fff,10.3vw 78.2vh 0 -0.49rem#fff,24vw 45.9vh 0 -0.08rem#fff,6.1vw 58.3vh 0 -0.45rem#fff,77.2vw 96.9vh 0 -0.23rem#fff,38.5vw 43.8vh 0 -0.48rem#fff,85.7vw 96.1vh 0 -0.14rem#fff,45.7vw 57.2vh 0 -0.48rem#fff,36.6vw 86.4vh 0 -0.4rem#fff,46.8vw 98.4vh 0 -0.02rem#fff,9.7vw 74.8vh 0 -0.42rem#fff,48.8vw 22.8vh 0 -0.47rem#fff,76vw 43.2vh 0 -0.41rem#fff,81.9vw 7.5vh 0 -0.35rem#fff,28.7vw 36.7vh 0 -0.15rem#fff,61.7vw 53vh 0 -0.05rem#fff;
+  box-shadow: 21.8vw 51.2vh 0 -0.33rem#fff,45.9vw 57vh 0 -0.05rem#fff,56.3vw 44.3vh 0 -0.09rem#fff,63.6vw 51.7vh 0 -0.07rem#fff,4.5vw 70.5vh 0 -0.14rem#fff,67.3vw 28.1vh 0 -0.11rem#fff,33.8vw 17.7vh 0 -0.4rem#fff,79.5vw 84.6vh 0 -0.06rem#fff,94.5vw 21.8vh 0 -0.23rem#fff,5.5vw 59.3vh 0 -0.26rem#fff,37.8vw 86vh 0 -0.28rem#fff,93.9vw 93.6vh 0 -0.36rem#fff,3.5vw 25.6vh 0 -0.31rem#fff,64.4vw 65.5vh 0 -0.07rem#fff,18.2vw 79.6vh 0 -0.05rem#fff,25.2vw 36.5vh 0 -0.3rem#fff,22.9vw 70.9vh 0 -0.3rem#fff,85vw 39.8vh 0 -0.12rem#fff,55.2vw 77.5vh 0 -0.29rem#fff,65vw 9.1vh 0 -0.49rem#fff,95.2vw 56.4vh 0 -0.07rem#fff,16.6vw 18.1vh 0 -0.18rem#fff,82.6vw 3.3vh 0 -0.22rem#fff,58.3vw 12.5vh 0 -0.01rem#fff,31.2vw 16.4vh 0 -0.05rem#fff,36.5vw 82.8vh 0 -0.19rem#fff,24vw 26.2vh 0 -0.1rem#fff,50vw 84.6vh 0 -0.21rem#fff,82.9vw 64.2vh 0 -0.42rem#fff,59.8vw 74.5vh 0 -0.24rem#fff,70.2vw 74.2vh 0 -0.02rem#fff,27.5vw 12.1vh 0 -0.43rem#fff,48.7vw 54.6vh 0 -0.01rem#fff,7vw 5.5vh 0 -0.1rem#fff,28.2vw 83.8vh 0 -0.23rem#fff,10.3vw 78.2vh 0 -0.49rem#fff,24vw 45.9vh 0 -0.08rem#fff,6.1vw 58.3vh 0 -0.45rem#fff,77.2vw 96.9vh 0 -0.23rem#fff,38.5vw 43.8vh 0 -0.48rem#fff,85.7vw 96.1vh 0 -0.14rem#fff,45.7vw 57.2vh 0 -0.48rem#fff,36.6vw 86.4vh 0 -0.4rem#fff,46.8vw 98.4vh 0 -0.02rem#fff,9.7vw 74.8vh 0 -0.42rem#fff,48.8vw 22.8vh 0 -0.47rem#fff,76vw 43.2vh 0 -0.41rem#fff,81.9vw 7.5vh 0 -0.35rem#fff,28.7vw 36.7vh 0 -0.15rem#fff,61.7vw 53vh 0 -0.05rem#fff;
+  -webkit-animation-duration: 14s;
+  animation-duration: 14s; }
+
+.layer2.a {
+  -webkit-animation-delay: -7s;
+  animation-delay: -7s; }
+
+@-webkit-keyframes fall {
+  100% {
+    -webkit-transform: translateY(200vh);
+    transform: translateY(200vh); } }
+
+@keyframes fall {
+  100% {
+    -webkit-transform: translateY(200vh);
+    transform: translateY(200vh); } }
+*/
